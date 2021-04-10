@@ -1,0 +1,32 @@
+<?doctype= html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    
+  </head>
+
+  <body>
+    <div class="centered-form">
+      <div class="centered-form__box">
+        <h1>Join</h1>
+        <form id="loginForm" action="/chat" method="POST" onsubmit="return save()">
+          <label>Display name</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Display name"
+            required
+          />
+          <label>Room</label>
+          <input type="text" name="room" value="2624" readonly />
+          <button>Join</button>
+        </form>
+        <button class="signup__Button">SignUp</button>
+      </div>
+    </div>
+    <script src="/js/service-worker.js"> </script>
+  </body>
+</html>
